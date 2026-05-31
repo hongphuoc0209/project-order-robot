@@ -5,8 +5,9 @@ export class ScreenshotUtils {
     page: Page,
     fileName: string
   ): Promise<void> {
+
     await page.screenshot({
-      path: `screenshots/${fileName}`,
+      path: `${fileName}`,
       fullPage: true,
     });
   }

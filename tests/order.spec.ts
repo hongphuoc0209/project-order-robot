@@ -25,8 +25,4 @@ test('Test Order Functionality', async ({ page }) => {
     const filePath = PathUtils.getDataPath('orders.csv');
     await orderPage.createOrderList(filePath);
 
-    //Step 4: Verify order confirmation message
-
-
-    await page.waitForTimeout(5000);
 });
